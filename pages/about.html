@@ -21,32 +21,37 @@
 
 <body class="bg-black">
 
-    <nav class="navbar navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center"  href="/">
-                <span class="iconify" data-icon="bi:arrow-left"></span>
-                <span style="font-size: 20px" class="ml-1">HOME</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" ></span>
-            </button>
-          
-            <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">WORKS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/about.html">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#">ARTICLE</a>
-                </li>
-              </ul>
-            </div> -->
+    <nav class="navbar navbar-example navbar-dark fixed-top px-0 py-0">
+        <div class="wrap w-100 position-relative py-2">
+            <div class="container p-0 d-flex align-items-center container-navbar">
+                <div class="overlay" onclick="toggleNav()"></div>
+                <a class="navbar-brand d-flex align-items-center px-0"  href="/">
+                    <span class="iconify" data-icon="bi:arrow-left"></span>
+                    <span style="font-size: 20px" class="ml-1">HOME</span>
+                </a>
+                
+                <span class="navbar-toggler-icon ml-auto "onclick="toggleNav()"></span>
+              
+                <div class="navbar-collapse collaps">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pl-3 mb-5">
+                        <img src="../img/logo.png" width="100" alt="">
+                    </li>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="/">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="works.html">WORKS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#">ARTICLE</a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
         </div>
     </nav>
     <div class="w-100 row mx-0">
@@ -104,30 +109,10 @@
 	</script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-  <!-- <script>
-    $('.slider-article').slick({
-      slidesToShow: 3,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      infinite: true,
-      arrows: false,
-      dots: false,
-    })
-    $('.slider-client').slick({
-			infinite: true,
-			speed: 1500,
-			autoplay: true,
-			autoplaySpeed: 0,
-			centerMode: true,
-			cssEase: 'linear',
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			variableWidth: true,
-			infinite: true,
-			initialSlide: 1,
-			arrows: false,
-			buttons: false
-		})
-  </script> -->
+    <script>
+        function toggleNav(){
+            $('.navbar-example').toggleClass('show')
+        }
+    </script>
 	</body>
 </html>
