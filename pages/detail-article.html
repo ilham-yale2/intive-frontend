@@ -22,37 +22,70 @@
 <body class="bg-black">
     <nav class="navbar navbar-example navbar-dark fixed-top px-0 py-0">
         <div class="wrap w-100 position-relative py-3">
-            <div class="container p-0 d-flex align-items-center container-navbar px-4 px-md-0">
-                <div class="overlay" onclick="toggleNav()"></div>
-                <a class="navbar-brand d-flex align-items-center px-0 py-md-5"  href="/">
-                    <span class="iconify" data-icon="bi:arrow-left"></span>
-                    <span style="font-size: 15px" class="ml-1">HOME</span>
-                </a>
-                
-                <span class="navbar-toggler-icon ml-auto my-5"onclick="toggleNav()"></span>
+            <div class="container p-0  container-navbar">
+                <div class="d-flex align-items-center px-2">
+                    <div class="overlay" onclick="toggleNav()"></div>
+                    <a class="navbar-brand d-flex align-items-center pl-2 py-md-5"  href="/">
+                        <span class="iconify" data-icon="bi:arrow-left"></span>
+                        <span style="font-size: 15px" class="ml-1">HOME</span>
+                    </a>
+                    
+                    <span class="navbar-toggler-icon ml-auto my-5 pr-2"onclick="toggleNav()"></span>
+                </div>
               
                 <div class="navbar-collapse collaps overflow-hidden">
                     <div class="position-relative">
-                        <div class="container d-flex position-relative z-2 pt-5 nav-content px-3 px-md-0">
-                            <div class="navbar-brand">
-                                <img src="../img/logo.png" width="100" alt="">
+                        <div class="container d-flex flex-wrap position-relative z-2 py-3 py-md-5 nav-content">
+                            <div class="w-100 px-2 d-flex mt-3">
+                                <div class="" >
+                                    <img src="../img/logo.png" class="nav-logo" alt="">
+                                </div>
+                                <span class="navbar-toggler-icon ml-auto"  onclick="toggleNav()"></span>
                             </div>
-                            <ul class="navbar-nav ml-auto d-flex ml-auto text-right"> 
-                                <li class="m ">
-                                <a class="nav-link" href="/">HOME</a>
-                                </li>
-                                <li class="m">
-                                <a class="nav-link" href="works.html">WORKS</a>
-                                </li>
-                                <li class="m">
-                                    <a class="nav-link" href="about.html">ABOUT</a>
-                                </li>
-                                <li class="m">
-                                <a class="nav-link active" href="article.html">ARTICLE</a>
-                                </li>
-                            </ul>
+                            <div class="col-md-6 d-none d-md-flex">
+                                <div class="w-100 mt-md-auto text-white nav-address">
+                                    <h4 class="text-uppercase">
+                                        Our address
+                                      </h4>
+                                      <p class="mt-3 mb-5">
+                                        Jl. Pd. Wiyung Indah Utara VI No.33, Wiyung, Kec. Wiyung, Kota SBY, Jawa Timur - 60228
+                                      </p>
+                                      <h2>
+                                        hello@intivestudio.com
+                                      </h2>
+                                </div>
+                            </div>
+                            <div class="col-md-6 position-relative d-flex align-items-center w-100 pr-0">
+                                <ul class="navbar-nav  navbar-secondary"> 
+                                    <li class="">
+                                        <a class="nav-link" href="/">HOME</a>
+                                    </li>
+                                    <li class="">
+                                        <a class="nav-link" href="works.html">WORKS</a>
+                                    </li>
+                                    <li class="">
+                                        <a class="nav-link" href="about.html">ABOUT</a>
+                                    </li>
+                                    <li class="active">
+                                        <a class="nav-link " href="article.html">ARTICLE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6 d-flex d-md-none nav-address">
+                                <div class="w-100 mt-4 text-white">
+                                    <h4 class="text-uppercase">
+                                        Our address
+                                      </h4>
+                                      <p class="mt-3 mb-5">
+                                        Jl. Pd. Wiyung Indah Utara VI No.33, Wiyung, Kec. Wiyung, Kota SBY, Jawa Timur - 60228
+                                      </p>
+                                      <h2 class="text-email">
+                                        hello@intivestudio.com
+                                      </h2>
+                                </div>
+                            </div>
                         </div>
-                        <img src="../img/about.png" class="group-11 position-absolute z-1 " style="right: 0;top: 0;width: 100%;max-height: 100%;">
+                        <img src="../img/about.png" class="group-11 position-absolute z-1 w-100 h-100" style="right: 0;top: 0;">
                     </div>
                 </div>
             </div>

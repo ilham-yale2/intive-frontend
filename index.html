@@ -21,33 +21,89 @@
 
 <body class="bg-black">
 
-    <nav class="navbar navbar-home navbar-expand-lg navbar-dark fixed-top pt-4 px-0">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo.png" width="100" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="pages/works.html">WORKS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="pages/about.html">ABOUT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="pages/article.html">ARTICLE</a>
-                </li>
-              </ul>
-            </div>
-        </div>
-      </nav>
+  <nav class="navbar navbar-example navbar-dark fixed-top px-0 py-0">
+      <div class="wrap w-100 position-relative py-3">
+          <div class="container p-0 d-flex align-items-center container-navbar px-md-0 px-4">
+              <div class="overlay" onclick="toggleNav()"></div>
+              <a class="navbar-brand pt-3 pt-md-0" href="#">
+                  <img src="img/logo.png" class="nav-logo" alt="">
+              </a>
+              <div class="ml-auto d-none d-md-block" id="navbarSupportedContent">
+                <ul class="navbar-home d-flex">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/works.html">WORKS</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="pages/about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="pages/article.html">ARTICLE</a>
+                  </li>
+                </ul>
+              </div>
+              <span class="navbar-toggler-icon ml-auto my-5 d-block d-md-none"onclick="toggleNav()"></span>
+            
+              <div class="navbar-collapse collaps overflow-hidden">
+                  <div class="position-relative">
+                      <div class="container d-flex flex-wrap position-relative z-2 py-3 py-md-5 nav-content">
+                        <div class="w-100 px-2 d-flex mt-3 mt-md-3">
+                            <div class="" >
+                                <img src="../img/logo.png" class="nav-logo" alt="">
+                            </div>
+                            <span class="navbar-toggler-icon ml-auto"  onclick="toggleNav()"></span>
+                        </div>
+                          <div class="col-md-6 d-none d-md-flex nav-address">
+                            <div class="w-100 mt-md-auto text-white">
+                                <h4 class="text-uppercase">
+                                    Our address
+                                </h4>
+                                <p class="mt-3 mb-5">
+                                  Jl. Pd. Wiyung Indah Utara VI No.33, Wiyung, Kec. Wiyung, Kota SBY, Jawa Timur - 60228
+                                </p>
+                                <h2>
+                                  hello@intivestudio.com
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="col-md-6 position-relative d-flex align-items-center w-100">
+                            <ul class="navbar-nav navbar-secondary"> 
+                                <li class="active">
+                                    <a class="nav-link" href="/">HOME</a>
+                                </li>
+                                <li class="">
+                                    <a class="nav-link" href="pages/works.html">WORKS</a>
+                                </li>
+                                <li class="">
+                                    <a class="nav-link" href="pages/about.html">ABOUT</a>
+                                </li>
+                                <li class="">
+                                    <a class="nav-link " href="pages/article.html">ARTICLE</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 d-flex d-md-none nav-address">
+                            <div class="w-100 mt-4 text-white">
+                                <h4 class="text-uppercase">
+                                    Our address
+                                  </h4>
+                                  <p class="mt-3 mb-5">
+                                    Jl. Pd. Wiyung Indah Utara VI No.33, Wiyung, Kec. Wiyung, Kota SBY, Jawa Timur - 60228
+                                  </p>
+                                  <h2 class="text-email">
+                                    hello@intivestudio.com
+                                  </h2>
+                            </div>
+                        </div>
+                      </div>
+                      <img src="../img/about.png" class="group-11 position-absolute z-1 w-100 h-100" style="right: 0;top: 0;">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </nav>
       <div class="position-fixed text-white arrow-up">
         <span class="iconify" data-icon="bi:arrow-up-circle" class="text-white" data-width="25"></span>
       </div>
@@ -70,32 +126,38 @@
     <div class=" banner position-relative">
       <img src="img/group-banner.svg" class="position-absolute z-1 w-100" style="top:0%" alt="">
         <div class="container z-2 position-relative">
-          <div class="row w-100 mx-0 align-items-center tagline">
-              <div class="mx-5 mx-md-auto  text-white mt-5 pt-4">
+          <div class="row w-100 mx-0 align-items-center tagline justify-content-center">
+              <div class="mx-1 mx-md-auto  text-white mt-5 pt-4">
                 <h1>Your <span class="text-silk-italic">Digital</span></h1>
                 <h1 class="ml-5 pl-5">Movement</h1>
                 <h1>Solution.</h1>
               </div>
           </div>
-          <p class="text-white text-uppercase text-13 col-12 px-0">
+          <p class="text-white text-uppercase text-13 text-11-mobile col-md-12 px-2 ">
             We are passionate to deliver every digital solution <br>
             for your business to thrive in the 4.0 era
           </p>
+          
         </div>
         <div class="container position-relative z-2  text-white tagline-about">
-          <h4 class="text-silk-italic">
+          <h4 class="text-silk-italic px-md-0 px-2">
             About Us
           </h4>
           <div class="row">
             <div class="col-md-5 col-12 px-md-0 mt-5"> 
-                <h1 class="text-white">
-                  Our Passion is Your Solution
+                <h1 class="text-white text-about d-none d-md-block">
+                  Our Passion <span class="text-silk-italic-bold">is</span> <br>
+                   Your Solution
+                </h1>
+                <h1 class="text-white text-about d-block d-md-none">
+                  Our Passion <br> <span class="text-silk-italic-bold">is</span> 
+                   Your Solution
                 </h1>
             </div>
             <div class="col-12">
                
             </div>
-            <div class="col-md-4 col-12 px-md-0">
+            <div class="col-md-4 col-12 px-md-0 px-3">
                 <p class="mt-5">
                   Our passion is to scale up your business and ready to take-off against every challenging obstacle of disruption era
                 </p>
@@ -108,21 +170,21 @@
       <h4 class="mt-5 pt-5 pl-3 text-center mb-5 pb-5 text-silk-italic pl-md-0">
         Our Value
       </h4>
-      <div class="row text-uppercase my-5 px-3 px-md-0 position-relative py-5">
+      <div class="row text-uppercase my-5 px-3 px-md-0 position-relative py-5 our-value">
         <img src="img/ellipse-value.svg" class="position-absolute align-middle elipse" alt="">
-        <div class="col-md-5 col-6 ml-md-auto mr-md-auto">
-          <h3>SOLUTIVE</h3>
+        <div class="col-md-5 col-6 mx-auto text-right-mobile">
+          <h3 class="mt-4 mt-md-0">SOLUTIVE</h3>
           <p class=" mt-4">We provide solutions for your <br> business's digital problems</p>
         </div>
-        <div class="col-md-4 col-6 mr-md-5">
+        <div class="col-md-4 col-6 mr-md-5 pl-4 pl-md-2 pb-md-0">
           <h3>Innovative</h3>
           <p class="mt-4">We help you digitize and step up <br> your business with the newest <br> innovations</p>
         </div>
-        <div class="col-md-4 col-6 pl-md-5 mt-5 pt-4 offset-md-2 ">
-          <h3>creative</h3>
+        <div class="col-md-4 col-6 pl-md-5 mt-4 pt-4 offset-md-2 text-right-mobile">
+          <h3 class="">creative</h3>
           <p class="mt-4">We pay great attention to the <br> details of our work</p>
         </div>
-        <div class="col-md-4 col-6 mt-md-5 pt-4 mt-5 ml-md-5">
+        <div class="col-md-4 col-6 mt-md-5 pt-4 mt-4 ml-md-5 pl-2">
           <h3>Adaptive</h3>
           <p class="mt-4">We adapt to the most recent <br> technology and needs of our <br> clients</p>
         </div>
@@ -144,8 +206,8 @@
             Company Profile
           </h2>
         </div>
-        <div class="col-md-4  ml-auto mt-5 px-md-0">
-          <table class="border-0 text-uppercase">
+        <div class="col-md-4  ml-auto mt-5 px-md-0 px-4">
+          <table class="border-0 text-uppercase " width="100%">
               <tr>
                   <td class="text-secondary pr-4">
                       company
@@ -185,7 +247,7 @@
         Awards
       </h3>
     </div>
-    <div class="row mx-0 mt-5 mx-2 mx-md-0">
+    <div class="row mx-0 mt-5 mx-0">
       <div class="col-md-6 pl-0 mb-md-0 mb-5 pr-0 pr-md-3" style="max-height: 55vh;overflow: hidden;">
         <img src="img/awards.jpg" class="w-100" alt="" style="object-fit: cover;">
       </div>
@@ -222,35 +284,35 @@
       
       </div>
     </div>
-    <div class="container text-white position-relative z-2">
+    <div class="container text-white position-relative z-2 ">
       <h3 class="mt-5 pt-5 pl-3 text-silk-italic">Services</h3>
-      <div class="d-flex pt-4 pb-3 border-bottom border-secondary">
+      <div class="d-flex pt-4 pb-3 border-bottom border-secondary px-2 px-md-0">
         <span class="text-secondary">01</span>
         <h3 class="text-uppercase px-4" >Website Development</h3>
         <span class="iconify" data-icon="akar-icons:arrow-up-right" data-width="25"></span>
       </div>
-      <div class="d-flex pt-4 pb-3 border-bottom border-secondary">
+      <div class="d-flex pt-4 pb-3 border-bottom border-secondary px-2 px-md-0">
         <span class="text-secondary">02</span>
         <h3 class="text-uppercase px-4" >Mobile Applications <br>
           Development </h3>
         <span class="iconify" data-icon="akar-icons:arrow-up-right" data-width="25"></span>
       </div>
-      <div class="d-flex pt-4 pb-3 border-bottom border-secondary">
+      <div class="d-flex pt-4 pb-3 border-bottom border-secondary px-2 px-md-0">
         <span class="text-secondary">03</span>
         <h3 class="text-uppercase px-4" >AR/VR</h3>
         <span class="iconify" data-icon="akar-icons:arrow-up-right" data-width="25"></span>
       </div>
-      <div class="d-flex pt-4 pb-3 border-bottom border-secondary">
+      <div class="d-flex pt-4 pb-3 border-bottom border-secondary px-2 px-md-0">
         <span class="text-secondary">04</span>
         <h3 class="text-uppercase px-4" >Game Development</h3>
         <span class="iconify" data-icon="akar-icons:arrow-up-right" data-width="25"></span>
       </div>
-      <div class="d-flex pt-4 pb-3 border-bottom border-secondary">
+      <div class="d-flex pt-4 pb-3 border-bottom border-secondary px-2 px-md-0">
         <span class="text-secondary">05</span>
         <h3 class="text-uppercase px-4" >Internet of Things</h3>
         <span class="iconify" data-icon="akar-icons:arrow-up-right" data-width="25"></span>
       </div>
-      <div class="d-flex pt-4 pb-3 border-bottom border-secondary">
+      <div class="d-flex pt-4 pb-3 border-bottom border-secondary px-2 px-md-0">
         <span class="text-secondary">06</span>
         <h3 class="text-uppercase px-4" >Virtual Event</h3>
         <span class="iconify" data-icon="akar-icons:arrow-up-right" data-width="25"></span>
@@ -265,7 +327,7 @@
           </h5>
         </div>
       </div>
-      <div class="w-100 row mx-0 position-relative z-2 mt-4" style="overflow: hidden;max-height: 70vh;">
+      <div class="w-100 row mx-0 position-relative z-2 mt-4" style="overflow: hidden;">
         <div class="col-md-2 offset-md-1 ">
           <h1 class="text-title text-capitalize fw- text-white mt-4" style="font-size: 60px;">
             Read More
@@ -274,7 +336,7 @@
             Story
           </div>
         </div>
-          <div class="col-md-8 ml-auto px-0">
+          <div class="col-md-8 col-12 ml-auto px-0">
               <div class="w-100 slider-article">
                 <div class="content text-white">
                   <img src="img/article/1.jpg">
@@ -321,8 +383,8 @@
         Brands Collaborate With Us
       </h5>
     </div>
-    <div class="w-100 mt-5 z-2 position-relative text-center py-5 bg-white px-5">
-      <img src="img/partner.svg" class="col-9" alt="">
+    <div class="w-100 mt-5 z-2 position-relative text-center py-5 bg-white px-md-5">
+      <img src="img/partner.svg" class="col-md-9 col-12" alt="">
       <!-- <div class="slider-client bg-white row mx-0 justify-content-center py-3">
         <div class="p-2 slider-item">
           <img src="img/client logo/1200px-Avian_Brands_logo.svg-removebg-preview.png" alt="">
@@ -398,7 +460,7 @@
         </div>
       </div> -->
     </div>
-    <div class="container">
+    <div class="container px-4 px-md-0">
       <div class="row mt-5 pt-5 text-white">
         <div class="col-md-4 mb-5 mb-md-0">
           <h2 class="text-uppercase text-white">
@@ -417,15 +479,15 @@
           <p class="mt-3 mb-5">
             Jl. Pd. Wiyung Indah Utara VI No.33, Wiyung, Kec. Wiyung, Kota SBY, Jawa Timur - 60228
           </p>
-          <h2>
+          <h2 class="text-email">
             hello@intivestudio.com
           </h2>
         </div>
         <div class="col-12"></div>
         <div class="col-md-4 mt-4">
-          <h6 class="text-white mb-5"> &copy; INTIVESTUDIO 2021 All Right Reserved</h6>
+          <h6 class="text-white mb-5 text-copyright"> &copy; INTIVESTUDIO 2021 All Right Reserved</h6>
         </div>
-        <div class="col-md-4 ml-md-auto d-flex">
+        <div class="col-md-4 ml-md-auto d-flex mb-5 mb-md-0 ">
           <div class="ml-md-auto">
               <a href="#" class="text-white">Ig</a>
           </div>
@@ -450,6 +512,19 @@
 	</script>
 	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+  <script>
+    function toggleNav(){
+        $('.navbar-example').toggleClass('show')
+    }
+
+    var navActive = '';
+
+    function navTab(cls){
+        $('.nav-side').removeClass(navActive)
+        navActive = cls
+        $('.nav-side').addClass(cls)
+    }
+  </script>
   <script>
     $('.slider-article').slick({
       slidesToShow: 3,
